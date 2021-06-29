@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+  }
+  
+.body{
+    background-color: lightgray;
+    max-height: 100px;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+    background: white;
+     /* Should be removed. Only for demonstration */
+  }
+#col1{
+    width: 35%;
+    box-shadow: 1px 1px 1px 1px gray;
+    height: 1200px;
+    margin-left: 20px;
+    
+}
+#col2{
+    width: 58%;
+    margin-left: 10px;
+    box-shadow: 1px 1px 1px 1px gray;
+    height: 600px;
+}
+
+ #col3{
+  width: 58%;
+  margin-left: 500px;
+  box-shadow: 1px 1px 1px 1px gray;
+  height: 200px;
+  margin-bottom: 200px;
+ 
+} 
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  
+  /* On screens that are 992px or less, set the background color to blue */
+@media screen and (min-width: 601px) {
+    .pic img{
+        height: 230px;
+
+        width: 60%;
+        position: relative;
+        margin-left: 80px;
+        margin-top: -10px;
+        
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    .pic img{
+        height: 230px;
+        width: 113%;
+        position: relative;
+        margin-left: -10px;
+        margin-top: -10px;
+        
+    }
+  }
+
+/* glowing text */
+  @media screen and (max-width: 600px) {
+    .na{
+      margin-top: -60px;
+      position: absolute;
+      font-size: 25px;
+     
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+        }
+  }
+
+  @media screen and (min-width: 600px) {
+    .na{
+      margin-top: -60px;
+      position: absolute;
+      font-size: 40px;
+     
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  }
+    
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .ti{
+      font-size: 15px;
+      padding: 0px;
+      color: gray;
+      padding-top: 10px;
+      line-height: 40px;
+      
+    }
+  }
+  
+  /* If screen size is 600px wide, or less, set the font-size of <div> to 30px */
+  @media screen and (min-width: 600px) {
+    .ti{
+      font-size: 30px;
+      padding: 0px;
+      color: gray;
+      padding-top: 10px;
+      line-height: 80px;
+      
+    }
+    
+  }
+  
+  .ti a{
+    color: gray;
+    text-decoration: none;
+    
+  }
+
+  /* skill bar */
+  .container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    
+    
+  }
+  
+  .skills {
+    text-align: right;
+    padding-top: 2px;
+    padding-bottom: 20px;
+    color: white;
+    height: 30px;
+  }
+  
+  .html {width: 90%; background-color: #459b94; border-radius: 10px; height: 10px;}
+  .css {width: 90%; background-color: #459b94; border-radius: 10px; height: 1px;}
+  .js {width: 60%; background-color: #459b94; border-radius: 10px; height: 10px;}
+  .php {width: 30%; background-color: #459b94; border-radius: 10px; height: 10px;}
+  .Graphics {width: 40%; background-color: #459b94; border-radius: 10px; height: 10px;}
+
+  /* footer section */
+  .footer{
+    margin-top: 20px;
+     background-color: lightseagreen;
+      width: 100%;
+      position: absolute;
+      height: 100px;
+  }
+  .footer p{
+    color: white;
+    line-height: 30px;
+  }
+ 
+
+
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }

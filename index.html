@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+  <title>Document</title>
+</head>
+
+<body class="body">
+
+
+  <div class="row">
+    <div id="col1" class="column" style="background-color: white;">
+      <div class="pic">
+
+        <img src="PASSPORT1.png" alt="">
+        <h1 class="na" style="color: gray;">Iyoha Etinosa</h1>
+
+        <h2>About Me</h2>
+
+        <button class="accordion">Occupation</button>
+        <div class="panel">
+          <p>Web Developer</p>
+        </div>
+
+        <button class="accordion">Country</button>
+        <div class="panel">
+          <p>Benin City, Nigeria</p>
+        </div>
+
+        <button class="accordion">Email</button>
+        <div class="panel">
+          <p>iyohaetinosa14@gmail.com</p>
+        </div>
+        <button class="accordion">Github</button>
+        <div class="panel">
+          <p>Github.com/marvis1315</p>
+        </div>
+        <button class="accordion">Phone Number</button>
+        <div class="panel">
+          <p>+2348104103525</p>
+        </div>
+
+        <h1 style="margin-left: 20px;">Skills</h1>
+
+        <p>HTML</p>
+        <div class="container">
+          <div class="skills html">90%</div>
+        </div>
+
+        <p>CSS</p>
+        <div class="container">
+          <div class="skills css">90%</div>
+        </div>
+
+        <p>JavaScript</p>
+        <div class="container">
+          <div class="skills js">60%</div>
+        </div>
+
+        <p>Node.js</p>
+        <div class="container">
+          <div class="skills php">20%</div>
+        </div>
+        <p>Graphics Design</p>
+        <div class="container">
+          <div class="skills Graphics">40%</div>
+        </div>
+
+
+        <h1 style="margin-left: 10px; margin-top: 50px;">Language</h1>
+
+        <p>English</p>
+        <div class="container">
+          <div class="skills html">90%</div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- colume two -->
+    <div id="col2" class="column" style="background-color: white;">
+      <h1 class="red1" style=" color: gray;">Work Experience</h1>
+      <h1 class="red2" style="color: gray; font-size: 25px;">Back-End Development/D-Xpertz Computer Technology.</h1>
+      <h1 class="red3" style="color: #459b94;  font-size: 20px; margin-left: 13px;">May 2021- <span class="red4"
+          style="background-color: #459b94; color: white;">Current</span> </h1>
+      <h3 style="color: rgb(126, 100, 100);">
+        I'm currently undergoing a training for Back-End course to be a full stack web developer</h3>
+
+
+      <h1 class="red2" style="color: gray; font-size: 25px; margin-top: 40px;">Front-End Development/Goldtek
+        International Ltd.</h1>
+      <h1 class="red3" style="color: #459b94;  font-size: 20px; margin-left: 13px;">Jan 2021- May 2021</h1>
+      <h3 style="color: rgb(126, 100, 100);">I have undergone four months training on front-end web developer.</h3>
+    </div>
+
+  </div>
+
+
+  <!-- second column -->
+  <div class="row">
+    <div id="col1" class="column" style="background-color: lightgray; box-shadow: none; height: 1px;">
+
+    </div>
+    <div id="col2" class="column" style="background-color: white; margin-top: -590px; height: 590px;">
+      <h1 class="red1" style=" color: gray;">Education</h1>
+      <h1 class="red2" style="color: gray; font-size: 20px;">Federal University of Technology, Owerri.</h1>
+      <h1 class="red3" style="color: #459b94;  font-size: 20px; margin-left: 13px;">2013- 2018 </h1>
+      <h3 style="color: rgb(126, 100, 100);">Bachelor in Technology</h3>
+
+
+      <h1 class="red2" style="color: gray; font-size: 20px; margin-top: 60px;">Baptist High School, Benin City.</h1>
+      <h1 class="red3" style="color: #459b94;  font-size: 20px; margin-left: 13px;">2007- 2013</h1>
+      <h3 style="color: rgb(126, 100, 100);">NECO</h3>
+
+      <h1 class="red2" style="color: gray; font-size: 20px; margin-top: 60px;">Police Children School, Benin City.</h1>
+      <h1 class="red3" style="color: #459b94;  font-size: 20px; margin-left: 13px;">2002- 2006</h1>
+      <h3 style="color: rgb(126, 100, 100);">FSLC</h3>
+
+    </div>
+    <!-- footer section -->
+    <footer class="footer">
+      <p style="text-align: center;">Find me on social media
+        <a href="facebook.com"><i class="fab fa-facebook" style="color: gray;"></i> </a>
+        <a href="instagram"><i class="fab fa-instagram" style="color: gray;"></i></a>
+
+        <br> Powered by Iyoha 2021
+
+
+
+      </p>
+
+    </footer>
+
+  </div>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+</body>
+
+</html>
